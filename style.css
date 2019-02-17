@@ -20,7 +20,7 @@ body.modal-open {
     /* The image used */
     background-image: url("images/smUnivPic.jpg");
     /* Set a specific height */
-    min-height: 500px; 
+    min-height: 300px; 
     /* Create the topOfPage scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -30,17 +30,19 @@ body.modal-open {
 
 .nameID {
     width: 100%;
-    height: 37rem;
-    margin:3rem auto 0;
+    height: 28rem;
+    margin: 41px auto 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 60px;
 }
 
 
 html {
     font-size: 16px;
-
-    margin-top: 3em;
 }
 
 
@@ -61,19 +63,13 @@ footer {
 }
 
 
-
-header {
-    padding: 2em 0;
-}
-
-
 header h1 {
     font-size: 2em;
 }
 
 
 header span {
-    font-size: 1.5em;
+    font-size: 1em;
     color: #ccccff;
 }
 
@@ -88,13 +84,13 @@ nav {
     flex-flow: row;
     justify-content: center;
 
-    background: #333;
+    background: #43073d;
 }
 
 nav a {
     padding: .5em 2em;
     text-decoration: none;
-    color: #fff;
+    color: #e6e6ff;
 }
 
 nav a:hover {
@@ -103,10 +99,10 @@ nav a:hover {
 
 section {
     margin: 1em 0;
-
-    padding-top: 3em;
+    padding-top: 2em;
     min-height: 20em;
 }
+
 
 
 section > p {
@@ -128,8 +124,9 @@ section ul {
 
 
 #products article {
-    background: #ccc;
+    background: rgba(238, 231, 231, .6);
     padding: 1em;
+    height:35em;
 }
 
 
@@ -146,4 +143,47 @@ footer {
     padding: 1em 0;
     text-align: center;
 }
+
+#about p {
+    background-color:lightgray;
+}
+
+#myProducts {
+    border:2px dotted red;
+    padding:2em;
+    margin:0;
+    min-height:40em;
+
+
+    /* The image used */
+    background-image: url("images/outdoorOffice.jpg");
+    /* Set a specific height */
+    /* Create the topOfPage scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myProducts h2 {
+    color:white;
+}
+
+footer {
+    background-color: #43073d;
+}
+
+#contactMe {
+    border:1px dotted red;
+}
+
+#contactMe ul {
+    border:1px dotted blue;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+
+
 
