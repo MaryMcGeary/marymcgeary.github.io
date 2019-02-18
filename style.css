@@ -51,7 +51,11 @@ h1 {
 }
 
 h2, h3 {
-    color: #666;
+    color: black;
+}
+
+h2 {
+    font-size: 1.8em;
 }
 
 
@@ -82,7 +86,7 @@ nav {
 
     display: flex;
     flex-flow: row;
-    justify-content: center;
+    justify-content: right;
 
     background: #43073d;
 }
@@ -118,8 +122,8 @@ section ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-
-    grid-column-gap: 1em;
+    font-color: black;
+    grid-column-gap: 2em;
 }
 
 
@@ -127,11 +131,14 @@ section ul {
     background: rgba(238, 231, 231, .6);
     padding: 1em;
     height:35em;
+    border-radius: 5%;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 
 #products article img {
-    width: 100%;
+    width: 70%;
     border: 1px solid #333;
 }
 
@@ -154,11 +161,7 @@ footer {
     margin:0;
     min-height:40em;
 
-
-    /* The image used */
     background-image: url("images/outdoorOffice.jpg");
-    /* Set a specific height */
-    /* Create the topOfPage scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -166,7 +169,7 @@ footer {
 }
 
 #myProducts h2 {
-    color:white;
+    color: white;
 }
 
 footer {
@@ -174,16 +177,14 @@ footer {
 }
 
 #contactMe {
-    border:1px dotted red;
+    display: grid;
+    grid-row: 5;
 }
 
 #contactMe ul {
-    border:1px dotted blue;
     display: flex;
     justify-content: space-around;
-   
 }
-
 
 
 
