@@ -6,9 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="./style.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     </head>
     <body>
 
+        <nav id="navBar">
+            <div id="hideNav">
+                <a href="#home">Home</a>
+        
+                <a href="#aboutMe">About Me</a>
+            
+                <a href="#myProducts">My Products</a>
+            
+                <a href="#contactMe">Contact Me</a>
+            </div>
+
+            <div id="toggleArrow"><</div>
+        </nav>
+                
     <header id="home">
         <div class="topOfPage">
             <div class="nameID">
@@ -21,17 +36,19 @@
 
     <main>
         <section id="aboutMe">
-            <img id="image" src="images/bwProfilePic.png" height="180" align="left"> 
+            <img id="image" src="images/bwProfilePic.png" height="180" align = "left"> 
             <div id="about">
                 <h2>About Me</h2>
-                <p>Detail-oriented full-stack developer adept at streamlining complex ideas into user-friendly terms utilizing extensive problem-solving skills, strong technical abilities, and a track record of effective and open interpersoanl communication skills
+                <p>Detail-oriented full-stack developer adept at streamlining complex ideas into user-friendly terms utilizing extensive problem-solving skills, strong technical abilities, and a track-record of effective and open interpersonal communication skills. Strong mathematical background, experience in administration, education, government, and non-profit organizations.</p>
                 </div>
         </section>
         <section id="myProducts">
           
             <h2>My Products</h2>
             <div id="products">
-                <article>
+                <button id="buttonLeft">Left</button>
+                <button id="buttonRight">Right</button>
+                <article class="project">
                     <h3>Personal Portfolio</h3>
                         <img src="./images/portfolio.png">
                     <ul>
@@ -41,7 +58,7 @@
                         <li>Flexbox</li>
                     </ul>
                 </article>
-                <article>
+                <article class="project">
                     <h3>
                         CarGarage
                     </h3>
@@ -53,7 +70,7 @@
                                 <li></li>
                         </ul>
                 </article>
-                <article>
+                <article class="project">
                     <h3>UniversityClinicHospital</h3>
                         <img src="./images/UnivClinicHosp.png">
                         <ul>
@@ -71,7 +88,7 @@
             <ul>
                 <li><i class="fab fa-linkedin fa-3x"></i>  <a href="https://linkedin.com/in/marymcgeary" target="_blank">Linkedin</a> </li>
                 <li><i class="fab fa-github fa-3x"></i> <a href="https://github.com/MaryMcGeary" target="_blank">Github</a> </li>
-                <li><i class="fas fa-envelope-square fa-3x"></i>  mary@marymcgeary.com</li>
+                <li><i class="fas fa-envelope-square fa-3x"></i>  mmcgeary1@gmail.com</li>
                 <li><i class="fas fa-mobile-alt fa-3x"></i>  (216) 618-0230</li>
         
            
@@ -79,16 +96,9 @@
         </section>
     </main>
 
-    <nav>
-        <a href="#home">Home</a>
-
-        <a href="#aboutMe">About Me</a>
-    
-        <a href="#myProducts">My Products</a>
    
-        <a href="#contactMe">Contact Me</a>
-    </nav>
-    
+   
+
     <footer>
         &copy; 2019 Mary McGeary
     </footer>
