@@ -1,7 +1,7 @@
 const button = document.getElementById("toggleArrow");
 const navItems = document.getElementById("hideNav");
 
-const slideIndex = 1;
+let slideIndex = 1;
 showProjects(slideIndex);
 
 
@@ -35,9 +35,9 @@ function showProjects(n) {
         slideIndex = 1;
     }
     if (n < 1){
-        slideIndex = myProject.length;
+        slideIndex = myProjects.length;
     }
-    for (i = 0; i < myProject.length; i++){
+    for (i = 0; i < myProjects.length; i++){
         myProjects[i].style.display = "none";
     }
     myProjects[slideIndex - 1].style.display = "flex";

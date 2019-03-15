@@ -40,11 +40,9 @@ body.modal-open {
     padding-bottom: 60px;
 }
 
-
 html {
     font-size: 16px;
 }
-
 
 h1 {
     color: #e6e6ff
@@ -58,14 +56,12 @@ h2 {
     font-size: 1.8em;
 }
 
-
 header,
 main,
 footer {
     margin: 0 auto;
     max-width: divice-width;
 }
-
 
 header h1 {
     font-size: 2em;
@@ -77,12 +73,10 @@ header h1 {
     cursor: pointer;
 }
 
-
 header span {
     font-size: 1em;
     color: #ccccff;
 }
-
 
 nav {
     position: fixed;
@@ -112,10 +106,6 @@ section {
     min-height: 20em;
 }
 
-/*#aboutMe img {
-    align-items: left;
-}*/
-
 section > p {
     margin: 1em 0;
 }
@@ -127,16 +117,15 @@ section ul {
 
 #products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, auto);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 2em;
     grid-template-areas: 
-    ". a a ." 
-    "l a a r" 
-    ". a a .";
+    ". . . a a . . ." 
+    "l . . a a . . r" 
+    ". . . a a . . .";
 
-    border:1px dotted red;
-
+    /*border:1px dotted red;*/
 }
 
 #buttonLeft {
@@ -150,14 +139,14 @@ section ul {
 #products article {
     background: rgba(238, 231, 231, .6);
     padding: 1em;
-    height:35em;
     border-radius: 5%;
     font-size: 1em;
     font-weight: bold;
     grid-area: a;
     display: flex;
+    align-items: center;
+    flex-direction: column;
 }
-
 
 #products article img {
     width: 70%;
