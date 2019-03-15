@@ -9,12 +9,14 @@
     line-height: 1.618em;
 }  
 
-body.modal-open {
-    /* hide scrolling when modal open */
+/* body.modal-open {
+    /* hide scrolling when modal open
    overflow: hidden;
-  }
+  } */
+
   body {    
     background-color:#f9f2ec;
+    /* text-align: center; */
   }
   .topOfPage {
     /* The image used */
@@ -26,8 +28,8 @@ body.modal-open {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* top: 0;
-    left: 0; */
+    /* text-align: center;
+    justify-content: center; */
 }
 
 .nameID {
@@ -79,6 +81,7 @@ header span {
     color:white;
     cursor: pointer;
     display: none;
+    justify-content: left;
 }
 
 nav {
@@ -91,7 +94,7 @@ nav {
     display: flex;
     flex-flow: row;
     justify-content: left;
-
+    justify-items: left;
     background: #43073d;
 }
 
@@ -110,6 +113,9 @@ nav a:hover {
     nav {
       display: flex;
       flex-flow: column;
+      /* justify-content: left;
+      justify-items: left;
+      justify-self: left; */
     }
 
     /* nav a {
@@ -118,6 +124,7 @@ nav a:hover {
 
     #burger {
         display: block;
+        /* justify-self: left; */
     }
     /* nav::before {
       content: 'SHOW MENU'; 
@@ -136,6 +143,7 @@ nav a:hover {
 
     nav.open a {
       display: block;
+      /* justify-self: left; */
     }
   
     nav ::selection {
@@ -174,10 +182,16 @@ section ul {
 
 #buttonLeft {
     grid-area: l;
+    background: 0.5;
+    max-height: 3em;
+    color: #43073d;
 }
 
 #buttonRight {
     grid-area: r;
+    background: 0.5;
+    max-height: 3em;
+    color: #43073d;
 }
 
 #products article {
