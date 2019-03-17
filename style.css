@@ -34,7 +34,7 @@
 
 .nameID {
     width: 100%;
-    height: 28rem;
+    height: 40rem;
     /* margin: 41px auto 0; */
     text-align: center;
     font-size: 1.75rem;
@@ -154,8 +154,8 @@ nav a:hover {
 
 section {
     margin: 1em 0;
-    padding-top: 2em;
-    min-height: 20em;
+    /* padding-top: 2em; */
+    min-height: 10em;
 }
 
 section > p {
@@ -165,6 +165,10 @@ section > p {
 
 section ul {
     padding-Left: 1.5em;
+}
+
+#projectsH2 {
+    padding-bottom: 2em;
 }
 
 #products {
@@ -204,6 +208,7 @@ section ul {
     display: flex;
     align-items: center;
     flex-direction: column;
+    max-width: 700px;
 }
 
 #products article img {
@@ -220,15 +225,18 @@ footer {
     text-align: center;
 }
 
+#aboutMe {
+    padding-top: 1em;
+}
+
 #about p {
     background-color:lightgray;
 }
 
 #myProducts {
-    padding:2em;
-    margin:0;
-    min-height:40em;
-
+    padding: 2em;
+    margin-top: 2em;
+    min-height: 50em;
     background-image: url("images/outdoorOffice.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -238,6 +246,7 @@ footer {
 
 #myProducts h2 {
     color: white;
+    padding-top: 1em;
 }
 
 footer {
@@ -246,7 +255,7 @@ footer {
 
 #contactMe {
     display: grid;
-    grid-row: 5;
+    /* grid-row: 5; */
 }
 
 #contactMe ul {

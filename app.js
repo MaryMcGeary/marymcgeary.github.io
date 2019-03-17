@@ -83,17 +83,17 @@ document.getElementById("buttonRight").addEventListener("click", cycleProjectsRi
 
 const modal = document.getElementById("myModal"); //get the modal
 const button = document.getElementById("myButton"); //get the button that opens the modal
-const span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
+// const span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
 
 button.onclick = function() {        //when user clicks button, open modal
   modal.style.display = "block"; 
 }
 
-span.onclick = function() {      // when user clicks <span> (x), close modal
-  modal.style.display = "none";
-}
+// span.onclick = function() {      // this would close modal when the <span> (x), close modal
+//   modal.style.display = "none";
+// }
 
-window.onclick = function(event) {   // when user clicks anywhere outside of modal, close it
+window.onclick = function(event) {   // close modal when click anywhere on screen
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -102,6 +102,9 @@ window.onclick = function(event) {   // when user clicks anywhere outside of mod
 //project description stuff
 const projectDescriptions = document.getElementsByClassName("projectDescription");
 const projectButtons = document.getElementsByClassName("projectButton");
+for (let i = 0; i < projectDescriptions.length; i++) {  //so descriptions don't start off open
+  projectDescriptions[i].style.display = "none";
+}
 
 function projectButtonClick() {  // toggles project descriptions
   for (let i=0; i < projectDescriptions.length; i++) {
@@ -118,5 +121,38 @@ for (let i=0; i < projectButtons.length; i++) {
   projectButtons[i].addEventListener("click", projectButtonClick);
 }
 
+// contact icon image clicks
+const email = document.querySelector("#email");
+email.addEventListener("click", function() {
+  email.innerHTML = "mmcgeary1@gmail.com";
+});
+
+// const phone = document.querySelector("#phone");
+// phone.addEventListener("click", function() {
+// if (phone.innerHTML === "") {
+//   phone.innerHTML = "(216)618-0230";
+// } else {
+//   phone.innerHTML === "";
+// }});
+
+const phone = document.querySelector("#phone");
+phone.addEventListener("click", function() {
+  phone.innerHTML = "(216)618-0230";
+});
+
+
+// function myFunction() {
+//   var x = document.getElementById("myDIV");
+//   if (x.innerHTML === "Hello") {
+//     x.innerHTML = "Swapped text!";
+//   } else {
+//     x.innerHTML = "Hello";
+//   }
+// }
+
+// Change the text in the footer when the user clicks it
+// footerColor.addEventListener("click", function(){
+//     footerColor.innerText = "My feet are Longfellows."
+// });
 
 })();
