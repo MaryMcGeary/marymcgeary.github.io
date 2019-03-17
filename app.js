@@ -81,9 +81,9 @@ document.getElementById("buttonRight").addEventListener("click", cycleProjectsRi
 
 // modal for bio stuff:
 
-var modal = document.getElementById("myModal"); //get the modal
-var button = document.getElementById("myButton"); //get the button that opens the modal
-var span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
+const modal = document.getElementById("myModal"); //get the modal
+const button = document.getElementById("myButton"); //get the button that opens the modal
+const span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
 
 button.onclick = function() {        //when user clicks button, open modal
   modal.style.display = "block"; 
@@ -99,6 +99,24 @@ window.onclick = function(event) {   // when user clicks anywhere outside of mod
   }
 }
 
+//project description stuff
+const projectDescriptions = document.getElementsByClassName("projectDescription");
+const projectButtons = document.getElementsByClassName("projectButton");
+
+function projectButtonClick() {  // toggles project descriptions
+  for (let i=0; i < projectDescriptions.length; i++) {
+    const x = projectDescriptions[i];
+    if (x.style.display == "none") {
+      x.style.display = "block";
+         } else {
+      x.style.display = "none";
+    }
+  }
+}
+
+for (let i=0; i < projectButtons.length; i++) {
+  projectButtons[i].addEventListener("click", projectButtonClick);
+}
 
 
 })();
