@@ -199,7 +199,7 @@ section ul {
     padding: 1em;
     border-radius: 5%;
     font-size: 1em;
-    font-weight: bold;
+    /* font-weight: bold; */
     grid-area: a;
     display: flex;
     align-items: center;
@@ -236,10 +236,6 @@ footer {
     background-size: cover;
 }
 
-/* .projectDescription {
-    border:1px dotted red;
-} */
-
 #myProducts h2 {
     color: white;
 }
@@ -260,6 +256,10 @@ footer {
 
 /* The modal button */
 #myButton {
+    margin-top: 1em;
+}
+
+.projectButton {
     margin-top: 1em;
 }
 
