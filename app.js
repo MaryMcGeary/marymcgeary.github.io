@@ -78,4 +78,27 @@ function showProjects(n) {
 
 document.getElementById("buttonLeft").addEventListener("click", cycleProjectsLeft);
 document.getElementById("buttonRight").addEventListener("click", cycleProjectsRight);
+
+// modal for bio stuff:
+
+var modal = document.getElementById("myModal"); //get the modal
+var button = document.getElementById("myButton"); //get the button that opens the modal
+var span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
+
+button.onclick = function() {        //when user clicks button, open modal
+  modal.style.display = "block"; 
+}
+
+span.onclick = function() {      // when user clicks <span> (x), close modal
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {   // when user clicks anywhere outside of modal, close it
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
 })();
