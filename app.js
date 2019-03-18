@@ -4,15 +4,7 @@
   
     function setUpPage() {
       addNavEventListeners();
-    //   addArticleEventListeners();
-    //   addWindowEventListeners();
-    //   addModalEventListeners();
-    //   addSliderEventListeners();
     }
-
-// const button = document.getElementById("toggleArrow");
-// const navItems = document.getElementById("hideNav");
-
 
 function addNavEventListeners() {
 
@@ -32,23 +24,6 @@ function addNavEventListeners() {
     document.body.addEventListener('click', bodyClickHandler);
   }
 
-  
-
-// function handleToggle() {
-    
-//     if (navItems.style.display === "none") {
-//         navItems.style.display = "flex";
-//         button.innerHTML = "<";
-//     }
-//     else {
-//         navItems.style.display = "none";
-//         button.innerHTML = ">"
-//     }
-// }
-
-// button.addEventListener("click", handleToggle);
-
-
 let slideIndex = 1;
 showProjects(slideIndex);
 
@@ -59,7 +34,6 @@ function cycleProjectsLeft(){
 function cycleProjectsRight(){
     showProjects(slideIndex += 1)
 }
-
 
 function showProjects(n) {
     let i;
@@ -83,15 +57,10 @@ document.getElementById("buttonRight").addEventListener("click", cycleProjectsRi
 
 const modal = document.getElementById("myModal"); //get the modal
 const button = document.getElementById("myButton"); //get the button that opens the modal
-// const span = document.getElementsByClassName("close")[0]; //get the <span> element that closes the modal
 
 button.onclick = function() {        //when user clicks button, open modal
   modal.style.display = "block"; 
 }
-
-// span.onclick = function() {      // this would close modal when the <span> (x), close modal
-//   modal.style.display = "none";
-// }
 
 window.onclick = function(event) {   // close modal when click anywhere on screen
   if (event.target == modal) {
@@ -127,32 +96,9 @@ email.addEventListener("click", function() {
   email.innerHTML = "mmcgeary1@gmail.com";
 });
 
-// const phone = document.querySelector("#phone");
-// phone.addEventListener("click", function() {
-// if (phone.innerHTML === "") {
-//   phone.innerHTML = "(216)618-0230";
-// } else {
-//   phone.innerHTML === "";
-// }});
-
 const phone = document.querySelector("#phone");
 phone.addEventListener("click", function() {
   phone.innerHTML = "(216)618-0230";
 });
-
-
-// function myFunction() {
-//   var x = document.getElementById("myDIV");
-//   if (x.innerHTML === "Hello") {
-//     x.innerHTML = "Swapped text!";
-//   } else {
-//     x.innerHTML = "Hello";
-//   }
-// }
-
-// Change the text in the footer when the user clicks it
-// footerColor.addEventListener("click", function(){
-//     footerColor.innerText = "My feet are Longfellows."
-// });
 
 })();

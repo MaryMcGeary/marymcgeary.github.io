@@ -9,11 +9,6 @@
     line-height: 1.618em;
 }  
 
-/* body.modal-open {
-    /* hide scrolling when modal open
-   overflow: hidden;
-  } */
-
   body {    
     background-color:#f9f2ec;
     /* text-align: center; */
@@ -22,20 +17,17 @@
     /* The image used */
     background-image: url("images/smUnivPic.jpg");
     /* Set a specific height */
-    min-height: 300px; 
+    min-height: 400px; 
     /* Create the topOfPage scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* text-align: center;
-    justify-content: center; */
 }
 
 .nameID {
     width: 100%;
     height: 40rem;
-    /* margin: 41px auto 0; */
     text-align: center;
     font-size: 1.75rem;
     display: flex;
@@ -88,7 +80,6 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    /* margin:0; */
     width: 100%;
 
     display: flex;
@@ -113,37 +104,18 @@ nav a:hover {
     nav {
       display: flex;
       flex-flow: column;
-      /* justify-content: left;
-      justify-items: left;
-      justify-self: left; */
     }
-
-    /* nav a {
-      display: none;
-    } */
 
     #burger {
         display: block;
-        /* justify-self: left; */
     }
-    /* nav::before {
-      content: 'SHOW MENU'; 
-      color: #fff;
-      background: #43073d;
-      font-weight: bold;
-      padding: 0.5em 2em;
-    } */
-
-    /* nav.open::before {
-      content: 'HIDE MENU';
-    } */
+    
     nav a {
         display: none;
     }
 
     nav.open a {
       display: block;
-      /* justify-self: left; */
     }
   
     nav ::selection {
@@ -154,14 +126,12 @@ nav a:hover {
 
 section {
     margin: 1em 0;
-    /* padding-top: 2em; */
-    min-height: 10em;
+    min-height: 15em;
 }
 
 section > p {
     margin: 1em 0;
 }
-
 
 section ul {
     padding-Left: 1.5em;
@@ -180,8 +150,6 @@ section ul {
     ". . . a a . . ." 
     "l . . a a . . r" 
     ". . . a a . . .";
-
-    /*border:1px dotted red;*/
 }
 
 #buttonLeft {
@@ -203,7 +171,6 @@ section ul {
     padding: 1em;
     border-radius: 5%;
     font-size: 1em;
-    /* font-weight: bold; */
     grid-area: a;
     display: flex;
     align-items: center;
@@ -255,7 +222,7 @@ footer {
 
 #contactMe {
     display: grid;
-    /* grid-row: 5; */
+    min-height: 8em;
 }
 
 #contactMe ul {
