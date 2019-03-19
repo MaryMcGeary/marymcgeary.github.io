@@ -99,6 +99,23 @@ nav a:hover {
     background: #666;
 }
 
+.toolTipText {
+    visibility: hidden;
+    width: 13vw;
+    background-color: #43073d;
+    color: #fff;
+    text-align: center;
+    font-size: 2vh;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 50%; 
+    z-index: 1;
+  }
+  
+.toolTip:hover .toolTipText {
+    visibility: visible;
+  }
+
 @media screen and (max-width: 750px) {
 
     nav {
