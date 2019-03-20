@@ -1,295 +1,290 @@
 * {
-    font-family: sans-serif;
-    line-height: 1.618em;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    list-style-type: none;
-    line-height: 1.618em;
-}  
+  font-family: sans-serif;
+  line-height: 1.618em;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+  line-height: 1.618em;
+}
 
-  body {    
-    background-color:#f9f2ec;
-    /* text-align: center; */
-  }
-  .topOfPage {
-    /* The image used */
-    background-image: url("images/smUnivPic.jpg");
-    /* Set a specific height */
-    min-height: 400px; 
-    /* Create the topOfPage scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  background-color: #f9f2ec;
+}
+.topOfPage {
+  background-image: url("images/smUnivPic.jpg");
+  min-height: 400px;
+  /* Create the topOfPage scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nameID {
-    width: 100%;
-    height: 40rem;
-    text-align: center;
-    font-size: 1.75rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-bottom: 60px;
+  width: 100%;
+  height: 40rem;
+  text-align: center;
+  font-size: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 60px;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 h1 {
-    color: #e6e6ff
+  color: #e6e6ff;
 }
 
-h2, h3 {
-    color: black;
+h2,
+h3 {
+  color: black;
 }
 
 h2 {
-    font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 header,
 main,
 footer {
-    margin: 0 auto;
-    max-width: divice-width;
+  margin: 0 auto;
+  max-width: divice-width;
 }
 
 header h1 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 header span {
-    font-size: 1em;
-    color: #ccccff;
+  font-size: 1em;
+  color: #ccccff;
 }
 
 #burger {
-    font-size: 1em;
-    color:white;
-    cursor: pointer;
-    display: none;
-    justify-content: left;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  display: none;
+  justify-content: left;
 }
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 
-    display: flex;
-    flex-flow: row;
-    justify-content: left;
-    justify-items: left;
-    background: #43073d;
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+  justify-items: left;
+  background: #43073d;
 }
 
 nav a {
-    padding: .5em 2em;
-    text-decoration: none;
-    color: #e6e6ff;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  color: #e6e6ff;
 }
 
 nav a:hover {
-    background: #666;
+  background: #666;
 }
 
 .toolTipText {
-    visibility: hidden;
-    width: 13vw;
-    background-color: #43073d;
-    color: #fff;
-    text-align: center;
-    font-size: 2vh;
-    border-radius: 6px;
-    bottom: 100%;
-    left: 50%; 
-    z-index: 1;
-  }
-  
+  display: none;
+  width: 13vw;
+  color: #43073d;
+  text-align: center;
+  font-size: 2vh;
+  border-radius: 6px;
+  bottom: 100%;
+  left: 50%;
+  z-index: 1;
+}
+
 .toolTip:hover .toolTipText {
-    visibility: visible;
-  }
+  display: block;
+}
 
 @media screen and (max-width: 750px) {
-
-    nav {
-      display: flex;
-      flex-flow: column;
-    }
-
-    #burger {
-        display: block;
-    }
-    
-    nav a {
-        display: none;
-    }
-
-    nav.open a {
-      display: block;
-    }
-  
-    nav ::selection {
-      color: inherit;
-      background: transparent;
-    }
+  nav {
+    display: flex;
+    flex-flow: column;
   }
 
+  #burger {
+    display: block;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  nav.open a {
+    display: block;
+  }
+
+  nav ::selection {
+    color: inherit;
+    background: transparent;
+  }
+}
+
 section {
-    margin: 1em 0;
-    min-height: 15em;
+  margin: 1em 0;
+  min-height: 15em;
 }
 
 section > p {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 section ul {
-    padding-Left: 1.5em;
+  padding-left: 1.5em;
+  min-height: 5em;
 }
 
 #projectsH2 {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 #products {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 2em;
-    grid-template-areas: 
-    ". . . a a . . ." 
-    "l . . a a . . r" 
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 2em;
+  grid-template-areas:
+    ". . . a a . . ."
+    "l . . a a . . r"
     ". . . a a . . .";
 }
 
 #buttonLeft {
-    grid-area: l;
-    background: 0.5;
-    max-height: 3em;
-    color: #43073d;
+  grid-area: l;
+  background: 0.5;
+  max-height: 3em;
+  color: #43073d;
 }
 
 #buttonRight {
-    grid-area: r;
-    background: 0.5;
-    max-height: 3em;
-    color: #43073d;
+  grid-area: r;
+  background: 0.5;
+  max-height: 3em;
+  color: #43073d;
 }
 
 #products article {
-    background: rgba(238, 231, 231, .6);
-    padding: 1em;
-    border-radius: 5%;
-    font-size: 1em;
-    grid-area: a;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 700px;
+  background: rgba(238, 231, 231, 0.6);
+  padding: 1em;
+  border-radius: 5%;
+  font-size: 1em;
+  grid-area: a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 700px;
 }
 
 #products article img {
-    width: 70%;
-    border: 1px solid #333;
+  width: 70%;
+  border: 1px solid #333;
 }
 
 footer {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    background: #666;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  background: #666;
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
 }
 
 #aboutMe {
-    padding-top: 1em;
+  padding-top: 1em;
 }
 
 #about p {
-    background-color:lightgray;
+  background-color: lightgray;
 }
 
 #myProducts {
-    padding: 2em;
-    margin-top: 2em;
-    min-height: 50em;
-    background-image: url("images/outdoorOffice.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding: 2em;
+  margin-top: 2em;
+  min-height: 50em;
+  background-image: url("images/outdoorOffice.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #myProducts h2 {
-    color: white;
-    padding-top: 1em;
+  color: white;
+  padding-top: 1em;
 }
 
 footer {
-    background-color: #43073d;
+  background-color: #43073d;
 }
 
 #contactMe {
-    display: grid;
-    min-height: 8em;
+  display: grid;
+  min-height: 8em;
 }
 
 #contactMe ul {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* The modal button */
 #myButton {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 .projectButton {
-    margin-top: 1em;
+  margin-top: 1em;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /*Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .myModalContent {
-    background-color: #fefefe; 
-    margin: 15% auto; /*15% from the top and centered*/
-    /*padding: 2em; */
-    border: 0.2em solid #43073d;
-    width: 40%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /*Black w/ opacity */
+}
 
+/* Modal Content/Box */
+.myModalContent {
+  background-color: #fefefe;
+  margin: 15% auto; /*15% from the top and centered*/
+  border: 0.2em solid #43073d;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
